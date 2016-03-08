@@ -1,12 +1,12 @@
-from setuptools import setup
+from distutils.core import setup
 
 setup(
     name='fpp',
 
 
-    version='0.0.1',
+    version='0.0.3',
 
-    description='A sample Python project',
+    description='fpp',
 
     url='https://github.com/faineance/fpp',
 
