@@ -1,2 +1,1 @@
 # fpp
-Functional programming utilities
