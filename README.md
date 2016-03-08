@@ -1,1 +1,1 @@
-# fpp [![Build Status](https://travis-ci.org/faineance/fpp.svg?branch=master)](https://travis-ci.org/faineance/fpp)
+# fpp [![Travis](https://img.shields.io/travis/faineance/fpp.svg?style=flat-square)]() [![PyPI](https://img.shields.io/pypi//nine.svg?style=flat-square)]() [![PyPI](https://img.shields.io/pypi/faineance/fpp.svg?style=flat-square)]()
