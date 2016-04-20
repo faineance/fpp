@@ -100,4 +100,4 @@ class Just(Maybe):
 
 def map_maybes(fn, lst):
     # probably should clean up to avoid calculating fn(elem) twice
-    return [fn(elem) for elem in lst if fn(elem).is_just()]
+    return [fn(elem)._v for elem in lst if fn(elem).is_just()]

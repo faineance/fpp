@@ -37,14 +37,13 @@ def greater_then_zero(v):
     else:
         return Nothing()
 >>> map_maybes(greater_then_zero, [1,2,-1,3])
-[<class 'fpp.Just'>(1), <class 'fpp.Just'>(2), <class 'fpp.Just'>(3)]
+[1,2,3]
 
 >>> Just(2).maybe(2, lambda x: x + 1)
 3
 
 >>> Nothing().maybe(2, lambda x: x + 1)
 2
-
 
 >>> Just(1) == Just(1)
 True
