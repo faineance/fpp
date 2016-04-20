@@ -1,4 +1,4 @@
-# fpp [![Travis](https://img.shields.io/travis/faineance/fpp.svg?style=flat-square)](https://travis-ci.org/faineance/fpp) [![PyPI](https://img.shields.io/pypi/faineance/fpp.svg?style=flat-square)](https://pypi.python.org/pypi?name=fpp) [![PyPI](https://img.shields.io/pypi/faineance/fpp.svg?style=flat-square)](https://pypi.python.org/pypi?name=fpp)
+# fpp [![Travis](https://img.shields.io/travis/faineance/fpp.svg?style=flat-square)](https://travis-ci.org/faineance/fpp) [![PyPI](https://img.shields.io/pypi/dm/fpp.svg?maxAge=2592000)](https://pypi.python.org/pypi/fpp/)
 
 ## Examples ( of sorts )
 ```python
