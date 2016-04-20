@@ -51,9 +51,16 @@ def greater_then_zero(v):
 'default'
 ```
 ```python
+>>> from_maybes([Just(2), Nothing(), Just(3)])
+[2, 3]
+```
+```python
 >>> Just(1) == Just(1)
 True
 
 >>> Nothing() == Just(1)
 False
 ```
+
+## Todo
+- versions of stdlib functions which return maybes ( eg int_maybe, float_maybe)

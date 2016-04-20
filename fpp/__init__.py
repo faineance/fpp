@@ -98,6 +98,10 @@ class Just(Maybe):
         return "%s(%r)" % (self.__class__, self._v)
 
 
+def from_maybes(lst):
+    return [elem._v for elem in lst if elem.is_just()]
+
+
 def map_maybes(fn, lst):
     # probably should clean up to avoid calculating fn(elem) twice
     return [fn(elem)._v for elem in lst if fn(elem).is_just()]
