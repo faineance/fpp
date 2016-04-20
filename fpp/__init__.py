@@ -38,6 +38,15 @@ class Maybe(Monad, Applicative, Functor, metaclass=ABCMeta):
     def empty(cls):
         return Nothing()
 
+    def is_just(self):
+        return isinstance(self, Just)
+
+    def from_maybe(maybe, default):
+        if isinstance(maybe, Just):
+            return maybe._v
+        else:
+            return default
+
 
 class Nothing(Maybe):
     def fmap(self, fmapper):
@@ -80,5 +89,8 @@ class Just(Maybe):
         return "%s(%r)" % (self.__class__, self._v)
 
 
-def is_just(maybe):
-    return isinstance(maybe, Just)
+def map_maybes(fn, lst):
+    # probably should clean up to avoid calculating fn(elem) twice
+    return [fn(elem) for elem in lst if fn(elem).is_just()]
+
+
