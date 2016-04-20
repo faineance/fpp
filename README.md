@@ -31,7 +31,6 @@ def greater_then_zero(v):
         return Just(v)
     else:
         return Nothing()
-
 >>> map_maybes(greater_then_zero, [1,2,-1,3])
 [<class 'fpp.Just'>(1), <class 'fpp.Just'>(2), <class 'fpp.Just'>(3)]
 
