@@ -22,9 +22,14 @@
 >>> Just(1).is_just()
 True
 
+>>> Nothing().is_nothing()
+False
+
 >>> Nothing().is_just()
 False
 
+>>> Nothing().is_nothing()
+True
 
 def greater_then_zero(v):
     if v > 0:
@@ -33,6 +38,13 @@ def greater_then_zero(v):
         return Nothing()
 >>> map_maybes(greater_then_zero, [1,2,-1,3])
 [<class 'fpp.Just'>(1), <class 'fpp.Just'>(2), <class 'fpp.Just'>(3)]
+
+>>> Just(2).maybe(2, lambda x: x + 1)
+3
+
+>>> Nothing().maybe(2, lambda x: x + 1)
+2
+
 
 >>> Just(1) == Just(1)
 True
