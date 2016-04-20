@@ -55,6 +55,9 @@ class Nothing(Maybe):
     def __eq__(self, other):
         return isinstance(other, Nothing)
 
+    def __repr__(self):
+        return "%s" % (self.__class__)
+
 
 class Just(Maybe):
     def __init__(self, v):
@@ -72,3 +75,10 @@ class Just(Maybe):
 
     def __eq__(self, other):
         return self._v == other._v
+
+    def __repr__(self):
+        return "%s(%r)" % (self.__class__, self._v)
+
+
+def is_just(maybe):
+    return isinstance(maybe, Just)
