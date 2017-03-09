@@ -1,6 +1,6 @@
-# fpp [![Travis](https://img.shields.io/travis/faineance/fpp.svg?style=flat-square)](https://travis-ci.org/faineance/fpp) [![PyPI](https://img.shields.io/pypi/dm/fpp.svg?maxAge=2592000)](https://pypi.python.org/pypi/fpp/)
+# fpp [![Travis](https://img.shields.io/travis/faineance/fpp.svg?style=flat-square)](https://travis-ci.org/faineance/fpp) 
 
-## Examples ( of sorts )
+## Examples
 ```python
 >>> Just(1) | (lambda x: x + 1) | (lambda x: x * 3)
 <class 'fpp.Just'>(6)
